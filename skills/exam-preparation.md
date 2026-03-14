@@ -5,7 +5,7 @@ title: Exam Preparation
 description: "Generates revision materials and practice questions"
 tags: [Production]
 connections:
-  - target: openai-gpt4
+  - target: llm-service
     type: runs_on
 ---
 
