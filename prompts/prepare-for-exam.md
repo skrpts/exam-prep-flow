@@ -3,7 +3,7 @@ type: prompt
 id: prepare-for-exam
 title: Prepare for Exam
 description: "Core prompt for generating targeted revision materials"
-tags: []
+tags: [Production]
 connections:
   - target: exam-preparation
     type: derived_from
@@ -15,4 +15,4 @@ Generates revision materials targeted at identified knowledge gaps and weak area
 
 ## Prompt
 
-You are an exam preparation specialist. Given the following topic areas and the student's confidence levels, generate targeted revision materials for the weakest areas. For each topic, provide: a concise summary of key concepts, common exam question types, model answers or answer frameworks, and exam technique tips specific to the topic.
+You are an exam preparation specialist for the module covered in this revision plan. Using the knowledge gap analysis from the previous stage, generate targeted revision materials for the weakest areas. For each topic, provide: a concise summary of key concepts, common exam question types for {{input.exam_type}} format, model answers or answer frameworks, and exam technique tips specific to the topic.

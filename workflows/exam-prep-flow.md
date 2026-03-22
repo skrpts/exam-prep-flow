@@ -54,7 +54,12 @@ Exam preparation package containing:
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.brief}}` | Yes | Primary workflow brief or source content | `Paste a short brief describing the goal, audience, and constraints.` |
+| `{{input.module_name}}` | Yes | The module or subject name | `Introduction to Psychology` |
+| `{{input.exam_date}}` | Yes | The exam date | `2026-05-20` |
+| `{{input.exam_type}}` | Yes | The exam format (e.g. written, multiple choice, essay) | `written essay` |
+| `{{input.syllabus_topics}}` | Yes | Syllabus topics with self-assessed confidence (1-5) | `Memory (3), Perception (4), Learning Theory (2)` |
+| `{{input.flashcard_count}}` | No | Number of flashcards to generate | `20` |
+| `{{input.question_count}}` | No | Number of practice questions to generate | `10` |
 
 ## Outputs
 
@@ -81,6 +86,11 @@ Before running this workflow:
 To test this workflow immediately after import:
 
 ```
-Brief: "Paste a short brief describing the goal, audience, and constraints."
+Module Name: "Introduction to Psychology"
+Exam Date: "2026-05-20"
+Exam Type: "written essay"
+Syllabus Topics: "Memory (3), Perception (4), Learning Theory (2)"
+Flashcard Count: "20"
+Question Count: "10"
 ```
 
