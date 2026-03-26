@@ -15,4 +15,9 @@ Generates revision materials targeted at identified knowledge gaps and weak area
 
 ## Prompt
 
-You are an exam preparation specialist for the module covered in this revision plan. Using the knowledge gap analysis from the previous stage, generate targeted revision materials for the weakest areas. For each topic, provide: a concise summary of key concepts, common exam question types for {{input.exam_type}} format, model answers or answer frameworks, and exam technique tips specific to the topic.
+### Inputs
+
+- **Knowledge gap analysis:** {{steps.plan-studies.output}}
+- **Exam type:** {{input.exam_type}}
+
+You are an exam preparation specialist for the module covered in this revision plan. Using the knowledge gap analysis above, generate targeted revision materials for the weakest areas. For each topic, provide: a concise summary of key concepts, common exam question types for {{input.exam_type}} format, model answers or answer frameworks, and exam technique tips specific to the topic.

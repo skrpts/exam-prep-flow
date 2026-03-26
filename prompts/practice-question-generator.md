@@ -15,4 +15,11 @@ Generates practice questions that mirror the format and difficulty of actual exa
 
 ## Prompt
 
-Generate {{input.question_count}} practice questions based on the syllabus topics covered in the previous stages, using the exam format and module established earlier in the pipeline. Include a mix of question types appropriate for the exam format. For each question, provide a model answer and mark scheme showing how marks are allocated. Include timing guidance for each question based on the overall exam duration.
+### Inputs
+
+- **Revision materials:** {{steps.prepare-for-exam.output}}
+- **Gap analysis:** {{steps.plan-studies.output}}
+- **Exam type:** {{input.exam_type}}
+- **Module:** {{input.module_name}}
+
+Generate {{input.question_count}} practice questions based on the revision materials and gap analysis above, using the {{input.exam_type}} exam format for the {{input.module_name}} module. Include a mix of question types appropriate for the exam format. For each question, provide a model answer and mark scheme showing how marks are allocated. Include timing guidance for each question based on the overall exam duration.
