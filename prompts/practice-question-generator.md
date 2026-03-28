@@ -3,23 +3,20 @@ type: prompt
 id: practice-question-generator
 title: Practice Question Generator
 description: "Task prompt for generating exam-style practice questions"
-tags: [Production]
+tags: [Tested]
 connections:
-  - target: exam-preparation
+  - target: note-taking
     type: derived_from
 ---
 
 ## Purpose
 
-Generates practice questions that mirror the format and difficulty of actual exam papers.
+Generates practice questions that mirror exam formats for effective revision.
 
 ## Prompt
 
-### Inputs
+Generate {{input.question_count}} practice questions in the style of {{input.exam_type}}, based on the structured notes and flashcards below. The module is {{input.module_name}} and the topic is {{input.topic}}. Include a mix of question types: multiple choice, short answer, and essay questions. For each question, provide a model answer and mark scheme. Ensure questions test different levels of understanding: recall, comprehension, application, and analysis.
 
-- **Revision materials:** {{steps.prepare-for-exam.output}}
-- **Gap analysis:** {{steps.plan-studies.output}}
-- **Exam type:** {{input.exam_type}}
-- **Module:** {{input.module_name}}
+**Structured notes:** {{steps.take-notes.output}}
 
-Generate {{input.question_count}} practice questions based on the revision materials and gap analysis above, using the {{input.exam_type}} exam format for the {{input.module_name}} module. Include a mix of question types appropriate for the exam format. For each question, provide a model answer and mark scheme showing how marks are allocated. Include timing guidance for each question based on the overall exam duration.
+**Flashcards:** {{steps.flashcard-creator.output}}

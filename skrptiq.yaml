@@ -3,7 +3,7 @@ id: "7fc55717-9ae9-420f-85ee-100714a48e5c"
 name: "exam-prep-flow"
 display_name: "Exam Prep Flow"
 description: "Syllabus review, gap analysis, revision materials, and practice papers"
-version: "1.3.0"
+version: "1.4.0"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -33,8 +33,8 @@ contents:
   skills: 2
   prompts: 4
   workflows: 1
-  services: 0
+  services: 1
   sources: 0
   documents: 0
   assets: 1
-  total: 8
+  total: 9

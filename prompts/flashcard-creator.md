@@ -2,25 +2,24 @@
 type: prompt
 id: flashcard-creator
 title: Flashcard Creator
-description: "Task prompt for generating revision flashcards"
+description: "Task prompt for generating study flashcards from notes"
 tags: [Production]
 connections:
-  - target: exam-preparation
+  - target: note-taking
     type: derived_from
 ---
 
 ## Purpose
 
-Creates flashcards focused on exam-relevant content for active recall practice.
+Creates flashcards from study notes for active recall practice.
 
 ## Prompt
 
-### Inputs
+Create {{input.card_count}} flashcards from the structured notes below. The module is {{input.module_name}} and the topic is {{input.topic}}. Each flashcard should have a clear question on the front and a concise answer on the back. Include a mix of: definition cards, concept explanation cards, and application cards. Order them from fundamental concepts to more advanced topics.
 
-- **Revision materials:** {{steps.prepare-for-exam.output}}
-- **Gap analysis:** {{steps.plan-studies.output}}
+**Structured notes:** {{steps.take-notes.output}}
 
-Create {{input.flashcard_count}} flashcards from the revision materials and gap analysis above, targeting the key concepts most likely to appear in the exam for this module. Each flashcard should have a clear question on the front and a concise answer on the back. Include a mix of definition cards, concept explanation cards, and application cards.
+Format each card as:
 
 **Front:** [question]
 **Back:** [answer]
