@@ -19,6 +19,8 @@ connections:
     type: uses
   - target: llm-service
     type: runs_on
+  - target: learning-science-reference
+    type: references
 ---
 
 ## Overview

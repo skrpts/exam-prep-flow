@@ -2,7 +2,7 @@
 type: prompt
 id: flashcard-creator
 title: Flashcard Creator
-description: "Task prompt for generating study flashcards from notes"
+description: "Simple study flashcard generator — creates question-and-answer cards from structured notes for active recall practice"
 tags: [Production]
 connections:
   - target: note-taking
