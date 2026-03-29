@@ -3,7 +3,7 @@ type: skill
 id: exam-preparation
 title: Exam Preparation
 description: "Generates revision materials and practice questions"
-tags: [Production]
+tags: [Production, planning:learning, learning:study]
 connections:
   - target: llm-service
     type: runs_on

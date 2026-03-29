@@ -3,7 +3,7 @@ type: prompt
 id: prepare-for-exam
 title: Prepare for Exam
 description: "Core prompt for generating targeted revision materials"
-tags: [Production]
+tags: [Production, planning:learning, learning:study]
 connections:
   - target: exam-preparation
     type: derived_from
