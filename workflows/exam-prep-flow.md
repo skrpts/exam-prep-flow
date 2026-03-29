@@ -3,7 +3,7 @@ type: workflow
 id: exam-prep-flow
 title: Exam Prep Flow
 description: "Syllabus review, gap analysis, revision materials, and practice papers"
-tags: [Production, Tested, analysis:risk, planning:learning, learning:study, optimisation:content]
+tags: [Production, Tested, Learning, Risk]
 connections:
   - target: study-planning
     type: uses
