@@ -21,8 +21,6 @@ connections:
     type: runs_on
   - target: learning-science-reference
     type: references
-  - target: critical-thinking-framework
-    type: references
   - target: revision-timetable-template
     type: references
 ---
