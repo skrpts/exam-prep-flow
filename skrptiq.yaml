@@ -3,7 +3,7 @@ id: "7fc55717-9ae9-420f-85ee-100714a48e5c"
 name: "exam-prep-flow"
 display_name: "Exam Prep Flow"
 description: "Syllabus review, gap analysis, revision materials, and practice papers"
-version: "1.1.0"
+version: "1.2.0"
 engine: ">=1.0.0"
 
 # --- Attribution ---
