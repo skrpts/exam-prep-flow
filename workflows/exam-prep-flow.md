@@ -9,14 +9,6 @@ connections:
     type: uses
   - target: exam-preparation
     type: uses
-  - target: plan-studies
-    type: uses
-  - target: prepare-for-exam
-    type: uses
-  - target: flashcard-creator
-    type: uses
-  - target: practice-question-generator
-    type: uses
   - target: llm-service
     type: runs_on
   - target: learning-science-reference
