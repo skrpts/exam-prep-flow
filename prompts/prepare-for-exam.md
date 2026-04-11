@@ -4,6 +4,13 @@ id: prepare-for-exam
 title: Prepare for Exam
 description: "Core prompt for generating targeted revision materials"
 tags: [Production, Learning, Academic]
+inputs:
+  exam_type:
+    label: "Exam Type"
+    description: "The format of the exam"
+    example: "Written essay exam, 3 hours, choose 3 from 6 questions"
+    required: true
+    type: text
 connections:
   - target: exam-preparation
     type: derived_from
