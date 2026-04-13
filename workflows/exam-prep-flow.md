@@ -19,7 +19,6 @@ execution:
   - skill: "study-planning"
     step_type: "generation"
   - skill: "exam-preparation"
-    input_from: "study-planning"
     step_type: "generation"
 ---
 
