@@ -15,6 +15,10 @@ connections:
     type: references
   - target: revision-timetable-template
     type: references
+output_step: "exam-preparation"
+composite_steps:
+  - "study-planning"
+  - "exam-preparation"
 execution:
   - skill: "study-planning"
     step_type: "generation"
