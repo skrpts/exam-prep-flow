@@ -9,21 +9,26 @@ connections:
     type: uses
   - target: exam-preparation
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: learning-science-reference
     type: references
   - target: revision-timetable-template
     type: references
-output_step: "exam-preparation"
+output_step: "language-polish"
 composite_steps:
   - "study-planning"
   - "exam-preparation"
+  - "language-polish"
 execution:
   - skill: "study-planning"
     step_type: "generation"
   - skill: "exam-preparation"
     step_type: "generation"
+  - skill: "language-polish"
+    step_type: "content"
 ---
 
 ## Overview
