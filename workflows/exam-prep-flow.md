@@ -24,10 +24,13 @@ composite_steps:
   - "language-polish"
 execution:
   - skill: "study-planning"
+    prompt: "plan-studies"
     step_type: "generation"
   - skill: "exam-preparation"
+    prompt: "prepare-for-exam"
     step_type: "generation"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
 ---
 
