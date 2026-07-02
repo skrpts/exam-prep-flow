@@ -3,7 +3,7 @@ id: "7fc55717-9ae9-420f-85ee-100714a48e5c"
 name: "exam-prep-flow"
 display_name: "Exam Prep Flow"
 description: "Syllabus review, gap analysis, revision materials, and practice papers"
-version: "1.2.23"
+version: "1.2.24"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -80,3 +80,17 @@ contents:
   documents: 0
   assets: 0
   total: 3
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-02T20:19:08.263Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/exam-prep-flow/security"
